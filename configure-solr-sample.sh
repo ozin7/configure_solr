@@ -1,7 +1,4 @@
 #!/bin/bash
-#
-# Example shell script to run post-provisioning.
-#
 # This script configures the default Apache Solr search core to use one of the
 # Drupal Solr module's configurations. This shell script presumes you have
 # `solr` in the `installed_extras`, and is currently set up for the D8 versions
@@ -11,10 +8,10 @@ SOLR_CORE_NAME="solr_custome_core"
 SOLR_SETUP_COMPLETE_FILE="/etc/drupal_vm_solr_config_complete_$SOLR_CORE_NAME"
 
 # Search API Solr module.
-SOLR_DOWNLOAD="http://ftp.drupal.org/files/projects/search_api_solr-8.x-1.x-dev.tar.gz"
+SOLR_DOWNLOAD="https://ftp.drupal.org/files/projects/search_api_solr-8.x-2.7.tar.gz"
 SOLR_DOWNLOAD_DIR="/tmp"
 SOLR_MODULE_NAME="search_api_solr"
-SOLR_VERSION="5.x"
+SOLR_VERSION="7.x"
 SOLR_CORE_PATH="/var/solr/data/$SOLR_CORE_NAME"
 
 # Check to see if we've already performed this setup.

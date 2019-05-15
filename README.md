@@ -1,2 +1,2 @@
 # Shell script for configuration Solr core.
-Run this script from your machine.
+Run this script on your machine.
